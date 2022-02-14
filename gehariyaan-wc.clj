@@ -7,7 +7,7 @@
 
 
 (->>
- (clojure.string/split (slurp "/Users/ajpremkumar/Downloads/Gehraiyaan (2022).srt") #" ")
+ (clojure.string/split (slurp "Gehraiyaan (2022).srt") #" ")
  (map clojure.string/lower-case)
  (filter (fn[x](not (some (partial = x) simpl))))
  (frequencies)
@@ -19,7 +19,7 @@
  
  
 (->>
- (clojure.string/split (slurp "/Users/ajpremkumar/Downloads/Gehraiyaan (2022).srt") #" ")
+ (clojure.string/split (slurp "Gehraiyaan (2022).srt") #" ")
  (map clojure.string/lower-case)
  (filter (fn[x](not (some (partial = x) simpl))))
  (frequencies)
